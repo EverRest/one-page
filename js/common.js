@@ -29,8 +29,8 @@ $(document).ready(function() {
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
+	$("a.arr_down").click(function() {
+		$.scrollTo($(".form"), 800, {
 			offset: -90
 		});
 	});
@@ -69,7 +69,7 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
+	$(".form").submit(function() {
 		$.ajax({
 			type: "GET",
 			url: "mail.php",
